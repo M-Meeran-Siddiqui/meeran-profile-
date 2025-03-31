@@ -193,7 +193,7 @@ span {
 }
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
@@ -315,13 +315,21 @@ span {
 .front-end-apps-layer h4,
 .certificates-layer h4 {
   font-size: 2rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  --ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.projects-layer h4::-webkit-scrollbar, .front-end-apps-layer h4::-webkit-scrollbar , .certificates-layer h4::-webkit-scrollbar{
+  width: 0;
+  height: 0;
 }
 
 .projects-layer p,
 .front-end-apps-layer p,
 .certificates-layer p {
   font-size: 1rem;
-  margin: 0.3rem 0 1rem;
+  margin: 0.1rem 0 1rem;
   max-height: 4rem;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -350,7 +358,7 @@ span {
 .projects-layer a i,
 .front-end-apps-layer a i,
 .certificates-layer a i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--second-bg-color);
   border-radius: 50%;
 }
@@ -447,7 +455,13 @@ span {
     font-size: 1rem;
     margin-left: 2rem;
   }
-
+  .skills-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects-layer h4 , .front-end-apps-layer h4 , .certificates-layer h4{
+    height: 2.5rem;
+    margin-bottom: 0.2rem;
+  }
   .footer {
     padding: 2rem 5%;
   }
