@@ -609,3 +609,14 @@ span {
     width: 90vw;
   }
 }
+
+/* Need to update after completion*/
+/* #spotify-btn a:active {
+  transform: scale(0.9);
+  transition: transform 0.1s ease-in-out;
+} */
+
+#spotify-content a:active{
+  transform: scale(0.9);
+  transition: transform 0.1s ease-in-out;
+}
