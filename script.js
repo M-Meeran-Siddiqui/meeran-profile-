@@ -160,7 +160,6 @@ document.getElementById("emailForm").onsubmit = function (event) {
     );
 };
 
-
 // Need to update after completion-->
 document.getElementById('spotify-content').lastElementChild.addEventListener('click', function(event) {
   event.preventDefault(); // prevents page reload
